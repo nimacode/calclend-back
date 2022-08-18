@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\CalculateRequest;
 use Auth;
 
 class CalculateController extends Controller
@@ -10,7 +11,7 @@ class CalculateController extends Controller
     const CHECK = 2.5;
     const SAFTEH = 3.5;
     
-    public function calculate(Request $request) {
+    public function calculate(CalculateRequest $request) {
         $data = [];
         $lendprice = $request->input('lendprice');
         $lendmonth = $request->input('lendmonth');

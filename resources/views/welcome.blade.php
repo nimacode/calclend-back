@@ -38,12 +38,12 @@
                                 <div class="row g-3">
                                     <div class="col-md-3">
                                         <label for="lendprice"> مقدار وام :</label>
-                                        <input type="text" name="lendprice" id="lendprice" class="form-control" placeholder="مقدار وام به تومان">
+                                        <input type="number" name="lendprice" id="lendprice" class="form-control" placeholder="مقدار وام به تومان">
                                     </div>
                                     <div class="col-md-3">
                                         <label for="lendmonth"> تعداد ماه :</label>
                                         <select name="lendmonth" class="form-select" id="lendmonth" aria-label="Default select example">
-                                            <option selected>انتخاب کنید</option>
+                                            <option selected value="">انتخاب کنید</option>
                                             <option value="1">یک ماه</option>
                                             <option value="2">دو ماه</option>
                                             <option value="3">سه ماه</option>
@@ -60,8 +60,8 @@
                                     </div>
                                     <div class="col-md-3">
                                         <label for="lendtype"> تعداد ماه :</label>
-                                        <select name="lendtype" class="form-select" id="lendmonth" aria-label="Default select example">
-                                            <option selected>انتخاب کنید</option>
+                                        <select name="lendtype" class="form-select" id="lendtype" aria-label="Default select example">
+                                            <option selected value="">انتخاب کنید</option>
                                             <option value="lendpaper">سفته</option>
                                             <option value="czech">چک</option>
                                           </select>
@@ -166,6 +166,9 @@
                         lendmonth: lendmonth,
                         lendtype: lendtype,
                         _token: "{{ csrf_token() }}"
+                    },
+                    error: function(data) {
+                        alert(Object.values(data.responseJSON.errors)[0]);
                     },
                     success: function(data){
                         $("#result").slideToggle(710);
