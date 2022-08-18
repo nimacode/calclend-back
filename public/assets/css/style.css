@@ -1,0 +1,59 @@
+@import url('../fonts/iranyekan/style.css');
+
+body {
+    font-family: IRANYekan !important;
+    color: #fff;
+}
+
+.data-input-section {
+    background-color: #023047;
+    padding: 70px 20px 70px 20px;
+    width: auto;
+    border-radius: 30px 30px 70px 70px;
+    align-items: center;
+    z-index: 100000;
+    position: relative;
+}
+
+.result-section {
+    background-color: #ffb703;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+#title {
+    margin-bottom: 40px;
+}
+
+/* Sajad Style */
+h1{
+    /* width:60%; */
+    font-size: 30px;
+    padding-right: 10px;
+    text-align: center;
+    color: #fb8500;
+}
+h4{
+    color: #8ecae6;
+    text-align: center;
+    font-size: 18px;
+}
+
+.count{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+img{
+    width: 50px;    
+}
+
+a{
+    font-size: 18px;
+    color: #023047;
+    text-decoration: none;
+}
+
+#result {
+    display: none;
+}
