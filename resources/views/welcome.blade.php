@@ -59,7 +59,7 @@
                                           </select>
                                     </div>
                                     <div class="col-md-3">
-                                        <label for="lendtype"> تعداد ماه :</label>
+                                        <label for="lendtype"> نوع ضمانت:</label>
                                         <select name="lendtype" class="form-select" id="lendtype" aria-label="Default select example">
                                             <option selected value="">انتخاب کنید</option>
                                             <option value="lendpaper">سفته</option>
